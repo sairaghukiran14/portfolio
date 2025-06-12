@@ -82,7 +82,7 @@ const App = () => {
           <div className="AvatarHighlight"></div>
         </div>
         <div className="projectSection grid grid-cols-2 gap-12 p-10 w-[80%] mx-auto">
-          <div className="Individualproject relative border border-blue-950 rounded-2xl p-6 flex flex-col justify-between items-start gap-6 bg-white/15 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] backdrop-blur-[20px] ">
+          <div className="Individualproject relative border border-blue-950 rounded-2xl p-6 flex flex-col justify-between items-start gap-6 bg-white/15 backdrop-blur-[20px] shadow-[0_8px_32px_0_rgba(31,38,135,0.37)]">
             <div className="projectimage text-5xl text-center font-semibold flex justify-center items-center bg-cyan-950  rounded-xl h-74 w-full">
               <img
                 src={tonnechat}
@@ -270,7 +270,7 @@ const App = () => {
 
       <div className="experienceSection p-10">
         {/* <h6 className="text-center text-xl font-semibold p-4">Experience</h6> */}
-        <div className="exBox flex justify-between items-center rounded-2xl p-10 w-[80%] mx-auto h-[20vh] border-b border-gray-500 border border-b-neutral-700">
+        <div className="exBox flex justify-between items-center rounded-2xl p-10 w-[80%] mx-auto h-[20vh]border-none bg-white/15 backdrop-blur-[1px] shadow-[0_8px_32px_0_rgba(31,38,135,0.37)]">
           <div className="leftSide flex justify-start items-center gap-4">
             <img
               src={alphavimatechnolgiesLogo}
@@ -279,7 +279,7 @@ const App = () => {
             />
 
             <div>
-              <p className="text-2xl font-semibold">Associate Engineer in</p>
+              <p className="text-2xl font-semibold">Associate Engineer </p>
               <p>Alphavima Technologies</p>
             </div>
           </div>
@@ -312,7 +312,7 @@ const App = () => {
             alt=""
             className="w-52 h-52 rounded-4xl  hover:translate-2.5 transition-all hover:scale-105 cursor-pointer"
           />
-          <h1 className="text-5xl font-semibold w-[65vw]  leading-20">
+          <h1 className="text-5xl font-semibold w-[65vw] leading-20">
             I'm a full-stack MERN developer passionate about building seamless,
             bug-free user experiences across both front-end and back-end
             systems.
@@ -385,7 +385,6 @@ const App = () => {
             <h5>in/avulasairaghukiran</h5>
             <button
               className="px-6 py-3 bg-blue-800 border border-blue-600 rounded-4xl cursor-pointer hover:bg-blue-700 transition-all duration-1000"
-             
               onClick={() =>
                 window.open(
                   "https://www.linkedin.com/in/avulasairaghukiran/",
