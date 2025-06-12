@@ -11,6 +11,8 @@ import {
   FaJsSquare,
   FaReact,
 } from "react-icons/fa";
+import avator from "./Images/page.png";
+import page2 from "./Images/page2.png";
 import { GradientText, MorphingText } from "./animations/TextAnimationDemo";
 const imagesearch =
   "https://res.cloudinary.com/dmqz317kh/image/upload/v1749726599/imagesearch_p9gvc8.png";
@@ -24,15 +26,9 @@ const rayban =
 const alphavimatechnolgiesLogo =
   "https://media.licdn.com/dms/image/v2/C510BAQF7VQBWBOx7SA/company-logo_200_200/company-logo_200_200/0/1630625180685/dsi_consulting_logo?e=1754524800&v=beta&t=v9oh0Nh1L2nsDL-8vmg0_X6XyUDWvQe0JKSlnVZgxUw";
 
-const noise =
-  "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E";
-
 const App = () => {
   return (
-    <main
-      className=" min-h-screen bg-black text-white"
-      style={{ backgroundImage: `url(${noise})`, backgroundSize: "cover" }}
-    >
+    <main className="mainSection min-h-screen text-white ">
       <div className="navbarSection flex justify-between items-center border-gray-500 w-[90%] mx-auto p-4 border-b">
         <div className="logo flex justify-center items-center">
           <span className="text-2xl font-semibold">asrkiran</span>
@@ -66,14 +62,27 @@ const App = () => {
               <br />
               living in india & working remotely with the whole world.
             </h6>
-            <button className="cta1 mt-3 rounded-4xl bg-slate-950 border border-slate-800 hover:bg-slate-900 cursor-pointer w-56 text-white p-3.5">
+            {/* <button className="cta1 mt-3 rounded-4xl bg-black border border-slate-800 hover:bg-slate-900 cursor-pointer w-56 text-white p-3.5">
               Ship stuff with me
+            </button> */}
+            {/* rainbow button */}
+            <button class="group relative inline-block items-center justify-center overflow-hidden rounded-4xl px-8 py-5 font-medium text-indigo-600 shadow-2xl hover:cursor-pointer">
+              <span class="ease absolute left-0 top-0 -ml-3 -mt-10 h-40 w-40 rounded-full bg-red-500 blur-md transition-all duration-700"></span>
+              <span class="ease absolute inset-0 h-full w-full transition duration-700 group-hover:rotate-180">
+                <span class="absolute bottom-0 left-0 h-24 w-24 rounded-full bg-purple-500 blur-md"></span>
+                <span class="absolute bottom-0 right-0 h-24 w-24 rounded-full bg-blue-600 blur-md"></span>
+                <span class="absolute bottom-0 right-0 h-24 w-24 rounded-full bg-sky-500 blur-md"></span>
+                <span class="absolute bottom-0 right-0 h-24 w-24 rounded-full bg-green-500 blur-md"></span>
+                <span class="absolute bottom-0 right-0 -mr-10 h-24 w-24 rounded-full bg-orange-500 blur-md"></span>
+                <span class="absolute bottom-0 right-0 -mr-20 h-24 w-24 rounded-full bg-red-500 blur-md"></span>
+              </span>
+              <span class="relative text-white"> Ship stuff with me</span>
             </button>
           </div>
           <div className="AvatarHighlight"></div>
         </div>
         <div className="projectSection grid grid-cols-2 gap-12 p-10 w-[80%] mx-auto">
-          <div className="Individualproject border border-blue-950 rounded-2xl p-6 flex flex-col justify-between items-start gap-6 bg-white/15 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] backdrop-blur-[20px] ">
+          <div className="Individualproject relative border border-blue-950 rounded-2xl p-6 flex flex-col justify-between items-start gap-6 bg-white/15 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] backdrop-blur-[20px] ">
             <div className="projectimage text-5xl text-center font-semibold flex justify-center items-center bg-cyan-950  rounded-xl h-74 w-full">
               <img
                 src={tonnechat}
@@ -166,6 +175,11 @@ const App = () => {
                 </div>
               </div>
             </div>
+            <img
+              src={avator}
+              alt=""
+              className="w-52 absolute -top-52 right-0"
+            />
           </div>
           <div className="Individualproject border border-blue-950 rounded-2xl p-6 flex flex-col justify-between items-start gap-6 bg-white/15 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] backdrop-blur-[20px] ">
             <div className="projectimage text-5xl text-center font-semibold flex justify-center items-center bg-cyan-950  rounded-xl h-74 w-full">
@@ -290,12 +304,20 @@ const App = () => {
           </div>
         </div>
       </div>
-      <div className="aboutmeSection flex flex-col justify-center items-center p-10 h-[75vh] gap-6 font-semibold ">
+      <div className="aboutmeSection flex flex-col justify-center items-center p-10 h-[75vh] gap-6 font-semibold relative">
         <h6>ABOUT ME</h6>
-        <h1 className="text-6xl font-semibold w-[65vw] text-center leading-20">
-          I'm a full-stack MERN developer passionate about building seamless,
-          bug-free user experiences across both front-end and back-end systems.
-        </h1>
+        <div className="flex justify-space-between items-center gap-10">
+          <img
+            src={page2}
+            alt=""
+            className="w-52 h-52 rounded-4xl  hover:translate-2.5 transition-all hover:scale-105 cursor-pointer"
+          />
+          <h1 className="text-5xl font-semibold w-[65vw]  leading-20">
+            I'm a full-stack MERN developer passionate about building seamless,
+            bug-free user experiences across both front-end and back-end
+            systems.
+          </h1>
+        </div>
       </div>
 
       <div className="tech flex justify-center items-center p-10  h-[70vh]">
