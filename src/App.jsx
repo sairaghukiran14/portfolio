@@ -66,15 +66,15 @@ const App = () => {
               Ship stuff with me
             </button> */}
             {/* rainbow button */}
-            <button class="group relative inline-block items-center justify-center overflow-hidden rounded-4xl px-8 py-5 font-medium text-indigo-600 shadow-2xl hover:cursor-pointer">
-              <span class="ease absolute left-0 top-0 -ml-3 -mt-10 h-40 w-40 rounded-full bg-red-500 blur-md transition-all duration-700"></span>
+            <button class="group relative inline-block items-center justify-center overflow-hidden rounded-4xl px-8 py-4 font-medium text-indigo-600 shadow-2xl hover:cursor-pointer mt-5 hover:scale-105 transition-all duration-1500">
+              <span class="ease absolute left-0 top-0 -ml-3 -mt-10 h-40 w-40 rounded-full bg-blue-500 blur-md transition-all duration-700"></span>
               <span class="ease absolute inset-0 h-full w-full transition duration-700 group-hover:rotate-180">
                 <span class="absolute bottom-0 left-0 h-24 w-24 rounded-full bg-purple-500 blur-md"></span>
                 <span class="absolute bottom-0 right-0 h-24 w-24 rounded-full bg-blue-600 blur-md"></span>
                 <span class="absolute bottom-0 right-0 h-24 w-24 rounded-full bg-sky-500 blur-md"></span>
                 <span class="absolute bottom-0 right-0 h-24 w-24 rounded-full bg-green-500 blur-md"></span>
-                <span class="absolute bottom-0 right-0 -mr-10 h-24 w-24 rounded-full bg-orange-500 blur-md"></span>
-                <span class="absolute bottom-0 right-0 -mr-20 h-24 w-24 rounded-full bg-red-500 blur-md"></span>
+                <span class="absolute bottom-0 right-0 -mr-10 h-24 w-24 rounded-full bg-blue-500 blur-md"></span>
+                <span class="absolute bottom-0 right-0 -mr-20 h-24 w-24 rounded-full bg-blue-500 blur-md"></span>
               </span>
               <span class="relative text-white"> Ship stuff with me</span>
             </button>
@@ -369,17 +369,23 @@ const App = () => {
         <h2 className="text-5xl">Ready to develop your next big thing?</h2>
         <div className="Socials flex justify-around items-center p-4 w-[60%]">
           <div className="linkedIn flex flex-col justify-center items-center gap-3 p-4">
-            <h2 className="text-3xl">LinkedIn</h2>
-            <h5>in/asrkiran</h5>
-            <button className="px-6 py-3 bg-amber-950 border border-amber-900 rounded-4xl">
-              Visit my LinkedIn
+            <h2 className="text-3xl">WhatsApp</h2>
+            <h5>+91 8332020170</h5>
+            <button
+              className="px-6 py-3 bg-green-800 border border-green-600 rounded-4xl cursor-pointer hover:bg-green-700 transition-all duration-1000"
+              onClick={() =>
+                window.open("https://wa.me/918332020170", "_blank")
+              }
+            >
+              Chat on WhatsApp
             </button>
           </div>
           <div className="linkedIn flex flex-col justify-center items-center gap-3 p-4">
             <h2 className="text-3xl">LinkedIn</h2>
             <h5>in/avulasairaghukiran</h5>
             <button
-              className="px-6 py-3 bg-amber-950 border border-amber-900 rounded-4xl cursor-pointer hover:bg-amber-900"
+              className="px-6 py-3 bg-blue-800 border border-blue-600 rounded-4xl cursor-pointer hover:bg-blue-700 transition-all duration-1000"
+             
               onClick={() =>
                 window.open(
                   "https://www.linkedin.com/in/avulasairaghukiran/",
