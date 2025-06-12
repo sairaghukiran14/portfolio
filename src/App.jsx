@@ -11,10 +11,14 @@ import {
   FaJsSquare,
   FaReact,
 } from "react-icons/fa";
-import imagesearch from "./Images/imagesearch.png";
-import tonnechat from "./Images/tonnechat.png";
-import summariser from "./Images/summariser.png";
-import rayban from "./Images/rayban.png";
+const imagesearch =
+  "https://res.cloudinary.com/dmqz317kh/image/upload/v1749726599/imagesearch_p9gvc8.png";
+const tonnechat =
+  "https://res.cloudinary.com/dmqz317kh/image/upload/v1749726593/tonnechat_nhp9an.png";
+const summariser =
+  "https://res.cloudinary.com/dmqz317kh/image/upload/v1749726592/sumarier_fef4ms.png";
+const rayban =
+  "https://res.cloudinary.com/dmqz317kh/image/upload/v1749726598/rayban_b4he6j.png";
 
 const alphavimatechnolgiesLogo =
   "https://media.licdn.com/dms/image/v2/C510BAQF7VQBWBOx7SA/company-logo_200_200/company-logo_200_200/0/1630625180685/dsi_consulting_logo?e=1754524800&v=beta&t=v9oh0Nh1L2nsDL-8vmg0_X6XyUDWvQe0JKSlnVZgxUw";
