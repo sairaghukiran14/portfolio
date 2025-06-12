@@ -11,6 +11,7 @@ import {
   FaJsSquare,
   FaReact,
 } from "react-icons/fa";
+import { GradientText, MorphingText } from "./animations/TextAnimationDemo";
 const imagesearch =
   "https://res.cloudinary.com/dmqz317kh/image/upload/v1749726599/imagesearch_p9gvc8.png";
 const tonnechat =
@@ -22,9 +23,16 @@ const rayban =
 
 const alphavimatechnolgiesLogo =
   "https://media.licdn.com/dms/image/v2/C510BAQF7VQBWBOx7SA/company-logo_200_200/company-logo_200_200/0/1630625180685/dsi_consulting_logo?e=1754524800&v=beta&t=v9oh0Nh1L2nsDL-8vmg0_X6XyUDWvQe0JKSlnVZgxUw";
+
+const noise =
+  "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 600'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)'/%3E%3C/svg%3E";
+
 const App = () => {
   return (
-    <main className=" min-h-screen bg-black text-white">
+    <main
+      className=" min-h-screen bg-black text-white"
+      style={{ backgroundImage: `url(${noise})`, backgroundSize: "cover" }}
+    >
       <div className="navbarSection flex justify-between items-center border-gray-500 w-[90%] mx-auto p-4 border-b">
         <div className="logo flex justify-center items-center">
           <span className="text-2xl font-semibold">asrkiran</span>
@@ -35,195 +43,217 @@ const App = () => {
           </button>
         </div>
       </div>
-      <div className="heroSection flex justify-center items-center p-8 h-[70vh] ">
-        <div className="heroMainContent flex flex-col justify-center items-center p-8 gap-4">
-          {/* <h1 className="S1">An Amazing</h1> */}
-          <h1 className="S2 text-7xl font-semibold">An Aspiring</h1>
-          <h1 className="text-7xl font-semibold">Javascript Developer</h1>
-          <h6 className="text-center">
-            Hi 👋. My name is Sai Raghu Kiran Avula, and I am a Javascript
-            developer
-            <br />
-            living in india & working remotely with the whole world.
-          </h6>
-          <button className="cta1 mt-3 rounded-4xl bg-slate-950 border border-slate-800 hover:bg-slate-900 cursor-pointer w-56 text-white p-3.5">
-            Ship stuff with me
-          </button>
+      <div className="">
+        <div className="heroSection flex justify-center items-center p-8 h-[70vh] ">
+          <div className="heroMainContent flex flex-col justify-center items-center p-8 gap-4">
+            {/* <h1 className="S1">An Amazing</h1> */}
+            <h1 className="S2 text-7xl font-semibold">
+              <MorphingText
+                texts={[
+                  "An Amazing",
+                  "An Awesome",
+                  "An Incredible",
+                  "A Fantastic",
+                ]}
+                className="text-6xl text-shadow-blue-400"
+                interval={3000}
+              />
+            </h1>
+            <h1 className="text-7xl font-semibold">Javascript Developer</h1>
+            <h6 className="text-center">
+              Hi 👋. My name is Sai Raghu Kiran Avula, and I am a Javascript
+              developer
+              <br />
+              living in india & working remotely with the whole world.
+            </h6>
+            <button className="cta1 mt-3 rounded-4xl bg-slate-950 border border-slate-800 hover:bg-slate-900 cursor-pointer w-56 text-white p-3.5">
+              Ship stuff with me
+            </button>
+          </div>
+          <div className="AvatarHighlight"></div>
         </div>
-        <div className="AvatarHighlight"></div>
+        <div className="projectSection grid grid-cols-2 gap-12 p-10 w-[80%] mx-auto">
+          <div className="Individualproject border border-blue-950 rounded-2xl p-6 flex flex-col justify-between items-start gap-6 bg-white/15 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] backdrop-blur-[20px] ">
+            <div className="projectimage text-5xl text-center font-semibold flex justify-center items-center bg-cyan-950  rounded-xl h-74 w-full">
+              <img
+                src={tonnechat}
+                alt=""
+                className="rounded-xl w-full h-full"
+              />
+            </div>
+            <div className="descript flex flex-col justify-center items-start gap-3 w-full">
+              <div className="projectShortDescription">
+                A Mern Chat Application with real-time messaging, user
+                authentication, and a modern UI.
+              </div>
+              <div className="projectHeader text-4xl font-semibold">
+                TonneChat
+              </div>
+            </div>
+            <div className="border-t border-gray-500 p-4 pt-8 w-full flex justify-between items-center">
+              <div className="techStackUsed flex gap-2 ">
+                <div className="1">
+                  <FaReact className="w-6 h-6" />
+                </div>
+                <div className="1">
+                  <FaJsSquare className="w-6 h-6" />
+                </div>
+                <div className="1">
+                  <SiMongodb className="w-6 h-6" />
+                </div>
+                <div className="1">
+                  <SiExpress className="w-6 h-6" />
+                </div>
+                <div className="1">
+                  <TbBrandSocketIo className="w-6 h-6" />
+                </div>
+              </div>
+              <div className="githublink">
+                <div className="tonnechat">
+                  <FaGithub
+                    className="w-6 h-6 cursor-pointer hover:scale-110 transition-all"
+                    onClick={() =>
+                      window.open(
+                        "https://github.com/sairaghukiran14/tennochat",
+                        "_blank"
+                      )
+                    }
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="Individualproject border border-blue-950 rounded-2xl p-6 flex flex-col justify-between items-start gap-6 bg-white/15 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] backdrop-blur-[20px] ">
+            <div className="projectimage text-5xl text-center font-semibold flex justify-center items-center bg-cyan-950  rounded-xl h-74 w-full">
+              <img
+                src={summariser}
+                alt=""
+                className="rounded-xl w-full h-full"
+              />
+            </div>
+            <div className="descript flex flex-col justify-center items-start gap-3 w-full">
+              <div className="projectShortDescription">
+                A React-based application that summarises articles using AI
+              </div>
+              <div className="projectHeader text-4xl font-semibold">
+                Article Summariser
+              </div>
+            </div>
+
+            <div className="border-t border-gray-500 p-4 pt-8 w-full flex justify-between items-center">
+              <div className="techStackUsed flex gap-2 ">
+                <div className="1">
+                  <FaReact className="w-6 h-6" />
+                </div>
+                <div className="1">
+                  <FaJsSquare className="w-6 h-6" />
+                </div>
+                <div className="1">
+                  <RiTailwindCssFill className="w-6 h-6" />
+                </div>
+              </div>
+              <div className="githublink">
+                <div className="1">
+                  <FaGithub
+                    className="w-6 h-6 cursor-pointer hover:scale-110 transition-all"
+                    onClick={() =>
+                      window.open(
+                        "https://github.com/sairaghukiran14/articlesummarizerusingAI",
+                        "_blank"
+                      )
+                    }
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="Individualproject border border-blue-950 rounded-2xl p-6 flex flex-col justify-between items-start gap-6 bg-white/15 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] backdrop-blur-[20px] ">
+            <div className="projectimage text-5xl text-center font-semibold flex justify-center items-center bg-cyan-950  rounded-xl h-74 w-full">
+              <img
+                src={imagesearch}
+                alt=""
+                className="rounded-xl w-full h-full"
+              />
+            </div>
+            <div className="descript flex flex-col justify-center items-start gap-3 w-full">
+              <div className="projectShortDescription">
+                A real-time image search application using the Unsplash API.
+              </div>
+              <div className="projectHeader text-4xl font-semibold">
+                ImageSearch
+              </div>
+            </div>
+
+            <div className="border-t border-gray-500 p-4 pt-8 w-full flex justify-between items-center">
+              <div className="techStackUsed flex gap-2 ">
+                <div className="1">
+                  <FaReact className="w-6 h-6" />
+                </div>
+                <div className="1">
+                  <FaJsSquare className="w-6 h-6" />
+                </div>
+                <div className="1">
+                  <RiTailwindCssFill className="w-6 h-6" />
+                </div>
+              </div>
+              <div className="githublink">
+                <div className="1">
+                  <FaGithub
+                    className="w-6 h-6 cursor-pointer hover:scale-110 transition-all"
+                    onClick={() =>
+                      window.open(
+                        "https://github.com/sairaghukiran14/ISA_App",
+                        "_blank"
+                      )
+                    }
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="Individualproject border border-blue-950 rounded-2xl p-6 flex flex-col justify-between items-start gap-6 bg-white/15 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] backdrop-blur-[20px] ">
+            <div className="projectimage text-5xl text-center font-semibold flex justify-center items-center bg-cyan-950  rounded-xl h-74 w-full">
+              <img src={rayban} alt="" className="rounded-xl w-full h-full" />
+            </div>
+            <div className="descript flex flex-col justify-center items-start gap-3 w-full">
+              <div className="projectShortDescription">
+                A landing page for RayBan, showcasing sleek animations.
+              </div>
+              <div className="projectHeader text-4xl font-semibold">
+                RayBan Landing page
+              </div>
+            </div>
+
+            <div className="border-t border-gray-500 p-4 pt-8 w-full flex justify-between items-center">
+              <div className="techStackUsed flex gap-2 ">
+                <div className="1">
+                  <FaHtml5 className="w-6 h-6" />
+                </div>
+                <div className="1">
+                  <RiTailwindCssFill className="w-6 h-6" />
+                </div>
+                <div className="1">
+                  <FaJsSquare className="w-6 h-6" />
+                </div>
+              </div>
+              <div className="githublink">
+                <div className="1">
+                  <FaGithub
+                    className="w-6 h-6 cursor-pointer hover:scale-110 transition-all"
+                    onClick={() =>
+                      window.open(
+                        "https://github.com/sairaghukiran14/sheryjsanimatedwebsite",
+                        "_blank"
+                      )
+                    }
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div className="projectSection grid grid-cols-2 gap-12 p-10 w-[80%] mx-auto">
-        <div className="Individualproject border border-blue-950 rounded-2xl p-6 flex flex-col justify-between items-start gap-6 bg-white/15 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] backdrop-blur-[20px] ">
-          <div className="projectimage text-5xl text-center font-semibold flex justify-center items-center bg-cyan-950  rounded-xl h-74 w-full">
-            <img src={tonnechat} alt="" className="rounded-xl w-full h-full" />
-          </div>
-          <div className="descript flex flex-col justify-center items-start gap-3 w-full">
-            <div className="projectShortDescription">
-              A Mern Chat Application with real-time messaging, user
-              authentication, and a modern UI.
-            </div>
-            <div className="projectHeader text-4xl font-semibold">
-              TonneChat
-            </div>
-          </div>
-          <div className="border-t border-gray-500 p-4 pt-8 w-full flex justify-between items-center">
-            <div className="techStackUsed flex gap-2 ">
-              <div className="1">
-                <FaReact className="w-6 h-6" />
-              </div>
-              <div className="1">
-                <FaJsSquare className="w-6 h-6" />
-              </div>
-              <div className="1">
-                <SiMongodb className="w-6 h-6" />
-              </div>
-              <div className="1">
-                <SiExpress className="w-6 h-6" />
-              </div>
-              <div className="1">
-                <TbBrandSocketIo className="w-6 h-6" />
-              </div>
-            </div>
-            <div className="githublink">
-              <div className="tonnechat">
-                <FaGithub
-                  className="w-6 h-6 cursor-pointer hover:scale-110 transition-all"
-                  onClick={() =>
-                    window.open(
-                      "https://github.com/sairaghukiran14/tennochat",
-                      "_blank"
-                    )
-                  }
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="Individualproject border border-blue-950 rounded-2xl p-6 flex flex-col justify-between items-start gap-6 bg-white/15 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] backdrop-blur-[20px] ">
-          <div className="projectimage text-5xl text-center font-semibold flex justify-center items-center bg-cyan-950  rounded-xl h-74 w-full">
-            <img src={summariser} alt="" className="rounded-xl w-full h-full" />
-          </div>
-          <div className="descript flex flex-col justify-center items-start gap-3 w-full">
-            <div className="projectShortDescription">
-              A React-based application that summarises articles using AI
-            </div>
-            <div className="projectHeader text-4xl font-semibold">
-              Article Summariser
-            </div>
-          </div>
 
-          <div className="border-t border-gray-500 p-4 pt-8 w-full flex justify-between items-center">
-            <div className="techStackUsed flex gap-2 ">
-              <div className="1">
-                <FaReact className="w-6 h-6" />
-              </div>
-              <div className="1">
-                <FaJsSquare className="w-6 h-6" />
-              </div>
-              <div className="1">
-                <RiTailwindCssFill className="w-6 h-6" />
-              </div>
-            </div>
-            <div className="githublink">
-              <div className="1">
-                <FaGithub
-                  className="w-6 h-6 cursor-pointer hover:scale-110 transition-all"
-                  onClick={() =>
-                    window.open(
-                      "https://github.com/sairaghukiran14/articlesummarizerusingAI",
-                      "_blank"
-                    )
-                  }
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="Individualproject border border-blue-950 rounded-2xl p-6 flex flex-col justify-between items-start gap-6 bg-white/15 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] backdrop-blur-[20px] ">
-          <div className="projectimage text-5xl text-center font-semibold flex justify-center items-center bg-cyan-950  rounded-xl h-74 w-full">
-            <img
-              src={imagesearch}
-              alt=""
-              className="rounded-xl w-full h-full"
-            />
-          </div>
-          <div className="descript flex flex-col justify-center items-start gap-3 w-full">
-            <div className="projectShortDescription">
-              A real-time image search application using the Unsplash API.
-            </div>
-            <div className="projectHeader text-4xl font-semibold">
-              ImageSearch
-            </div>
-          </div>
-
-          <div className="border-t border-gray-500 p-4 pt-8 w-full flex justify-between items-center">
-            <div className="techStackUsed flex gap-2 ">
-              <div className="1">
-                <FaReact className="w-6 h-6" />
-              </div>
-              <div className="1">
-                <FaJsSquare className="w-6 h-6" />
-              </div>
-              <div className="1">
-                <RiTailwindCssFill className="w-6 h-6" />
-              </div>
-            </div>
-            <div className="githublink">
-              <div className="1">
-                <FaGithub
-                  className="w-6 h-6 cursor-pointer hover:scale-110 transition-all"
-                  onClick={() =>
-                    window.open(
-                      "https://github.com/sairaghukiran14/ISA_App",
-                      "_blank"
-                    )
-                  }
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="Individualproject border border-blue-950 rounded-2xl p-6 flex flex-col justify-between items-start gap-6 bg-white/15 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] backdrop-blur-[20px] ">
-          <div className="projectimage text-5xl text-center font-semibold flex justify-center items-center bg-cyan-950  rounded-xl h-74 w-full">
-            <img src={rayban} alt="" className="rounded-xl w-full h-full" />
-          </div>
-          <div className="descript flex flex-col justify-center items-start gap-3 w-full">
-            <div className="projectShortDescription">
-              A landing page for RayBan, showcasing sleek animations.
-            </div>
-            <div className="projectHeader text-4xl font-semibold">
-              RayBan Landing page
-            </div>
-          </div>
-
-          <div className="border-t border-gray-500 p-4 pt-8 w-full flex justify-between items-center">
-            <div className="techStackUsed flex gap-2 ">
-              <div className="1">
-                <FaHtml5 className="w-6 h-6" />
-              </div>
-              <div className="1">
-                <RiTailwindCssFill className="w-6 h-6" />
-              </div>
-              <div className="1">
-                <FaJsSquare className="w-6 h-6" />
-              </div>
-            </div>
-            <div className="githublink">
-              <div className="1">
-                <FaGithub
-                  className="w-6 h-6 cursor-pointer hover:scale-110 transition-all"
-                  onClick={() =>
-                    window.open(
-                      "https://github.com/sairaghukiran14/sheryjsanimatedwebsite",
-                      "_blank"
-                    )
-                  }
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       <div className="experienceSection p-10">
         {/* <h6 className="text-center text-xl font-semibold p-4">Experience</h6> */}
         <div className="exBox flex justify-between items-center rounded-2xl p-10 w-[80%] mx-auto h-[20vh] border-b border-gray-500 border border-b-neutral-700">
