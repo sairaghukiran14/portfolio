@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./css/mediaqueries.css";
 import { SiExpress, SiMongodb } from "react-icons/si";
 import { TbBrandSocketIo } from "react-icons/tb";
@@ -27,6 +27,11 @@ const alphavimatechnolgiesLogo =
   "https://media.licdn.com/dms/image/v2/C510BAQF7VQBWBOx7SA/company-logo_200_200/company-logo_200_200/0/1630625180685/dsi_consulting_logo?e=1754524800&v=beta&t=v9oh0Nh1L2nsDL-8vmg0_X6XyUDWvQe0JKSlnVZgxUw";
 
 const App = () => {
+  const contactRef = useRef(null);
+
+  const scrollToContact = () => {
+    contactRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <main className="mainSection min-h-screen text-white min-w-[100vw]">
       <div className="navbarSection flex justify-between items-center border-gray-500 w-[90%] mx-auto p-4 border-b">
@@ -34,7 +39,10 @@ const App = () => {
           <span className="text-2xl font-semibold">asrkiran</span>
         </div>
         <div className="contactme ">
-          <button className="px-8 py-3 rounded-4xl bg-blue-950 border border-blue-800 cursor-pointer hover:bg-blue-900">
+          <button
+            className="px-8 py-3 rounded-4xl bg-blue-950 border border-blue-800 cursor-pointer hover:bg-blue-900"
+            onClick={scrollToContact}
+          >
             Contact me
           </button>
         </div>
@@ -369,7 +377,10 @@ const App = () => {
         </div>
       </div>
       <div className="stripLoopSection"></div>
-      <div className="contactSection flex flex-col justify-center items-center p-10 h-[65vh] gap-8 font-semibold ">
+      <div
+        ref={contactRef}
+        className="contactSection flex flex-col justify-center items-center p-10 h-[65vh] gap-8 font-semibold "
+      >
         <h6>CONTACT ME</h6>
         <h2 className="text-5xl">Ready to develop your next big thing?</h2>
         <div className="Socials flex justify-around items-center p-4 w-[60%]">
