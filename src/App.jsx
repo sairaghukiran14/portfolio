@@ -309,7 +309,7 @@ const App = () => {
           </div>
         </div>
       </div>
-      <div className="aboutmeSection flex flex-col justify-center items-center p-10 h-[75vh] gap-6 font-semibold ">
+      <div className="aboutmeSection flex flex-col justify-center items-center p-10 h-[55vh] gap-6 font-semibold ">
         <h6>ABOUT ME</h6>
         <div className="aboutme flex justify-space-between items-center gap-10 ">
           <img
@@ -325,7 +325,7 @@ const App = () => {
         </div>
       </div>
 
-      <div className="tech flex justify-center items-center p-10  min-h-[70vh]">
+      <div className="tech flex justify-center items-center p-10 min-h-[60vh]">
         <div className="techKnown grid grid-cols-3 gap-8 p-10 m-auto w-[90%] min-h-[90%] -mr-5 ">
           <div className="techOne flex flex-col justify-center items-start">
             <p>

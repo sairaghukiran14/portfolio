@@ -64,7 +64,64 @@
   
   /* Medium Devices (Tablets) - 481px to 768px */
   @media (min-width: 481px) and (max-width: 768px) {
+    .navbarSection{
+
+    }
+    .heroSection{
+      @apply min-h-[65vh]
+    }
+    .heroSection .heroMainContent h1{
+  @apply text-5xl;
+    }
+    .heroMainContent .mainHead .morphingtext{
+      @apply text-4xl;
+    }
+    .heroMainContent h6{
+      @apply w-[100%];
+    }
+    .projectSection{
+  @apply grid-cols-1 w-[95%];
+    }
+   .projectSection .Individualproject:first-child .avator{
+  @apply block 
+   }
+   .projectSection .Individualproject:nth-child(2) .avator{
+    @apply hidden
+     }
+    .experienceSection .exBox{
+      @apply flex flex-col gap-6 p-8 justify-center items-center w-[95%]
   
+    }
+    .aboutmeSection .aboutme{
+    @apply flex flex-col h-[50vh]  
+    }
+    .aboutmeSection .aboutme h1{
+      @apply w-[100%] text-3xl leading-12 text-justify
+      }
+    .tech .techKnown{
+  @apply flex flex-col mr-0
+    }
+    .tech .techKnown .techOne{
+      @apply text-center items-center
+        }
+        .tech .techKnown .techOne p{
+          @apply text-xl
+            }
+            .contactSection{
+              @apply text-center
+            }
+    .contactSection .Socials{
+  @apply flex flex-col
+    }
+    .contactSection .Socials button{
+      @apply w-54
+        }
+    .footerSection{
+  @apply justify-center items-center text-center
+    }
+    .footerSection .contactme{
+  @apply hidden
+    }
   }
   
   /* Large Devices (Laptops) - 769px to 1024px */
