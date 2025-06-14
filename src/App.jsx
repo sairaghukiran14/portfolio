@@ -1,4 +1,5 @@
 import React from "react";
+import "./css/mediaqueries.css";
 import { SiExpress, SiMongodb } from "react-icons/si";
 import { TbBrandSocketIo } from "react-icons/tb";
 import { RiTailwindCssFill } from "react-icons/ri";
@@ -22,13 +23,12 @@ const summariser =
   "https://res.cloudinary.com/dmqz317kh/image/upload/v1749726592/sumarier_fef4ms.png";
 const rayban =
   "https://res.cloudinary.com/dmqz317kh/image/upload/v1749726598/rayban_b4he6j.png";
-
 const alphavimatechnolgiesLogo =
   "https://media.licdn.com/dms/image/v2/C510BAQF7VQBWBOx7SA/company-logo_200_200/company-logo_200_200/0/1630625180685/dsi_consulting_logo?e=1754524800&v=beta&t=v9oh0Nh1L2nsDL-8vmg0_X6XyUDWvQe0JKSlnVZgxUw";
 
 const App = () => {
   return (
-    <main className="mainSection min-h-screen text-white ">
+    <main className="mainSection min-h-screen text-white min-w-[100vw]">
       <div className="navbarSection flex justify-between items-center border-gray-500 w-[90%] mx-auto p-4 border-b">
         <div className="logo flex justify-center items-center">
           <span className="text-2xl font-semibold">asrkiran</span>
@@ -40,10 +40,10 @@ const App = () => {
         </div>
       </div>
       <div className="">
-        <div className="heroSection flex justify-center items-center p-8 h-[70vh] ">
+        <div className="heroSection flex justify-center items-center p-8 min-h-[70vh] ">
           <div className="heroMainContent flex flex-col justify-center items-center p-8 gap-4">
             {/* <h1 className="S1">An Amazing</h1> */}
-            <h1 className="S2 text-7xl font-semibold">
+            <h1 className="mainHead text-7xl font-semibold">
               <MorphingText
                 texts={[
                   "An Amazing",
@@ -51,16 +51,16 @@ const App = () => {
                   "An Incredible",
                   "A Fantastic",
                 ]}
-                className="text-6xl text-shadow-blue-400"
+                className="morphingtext sm:text-6xl text-shadow-blue-400 text-4xl"
                 interval={3000}
               />
             </h1>
-            <h1 className="text-7xl font-semibold">Javascript Developer</h1>
-            <h6 className="text-center">
+            <h1 className="text-7xl font-semibold text-center">
+              Javascript Developer
+            </h1>
+            <h6 className="text-center w-[60%]">
               Hi 👋. My name is Sai Raghu Kiran Avula, and I am a Javascript
-              developer
-              <br />
-              living in india & working remotely with the whole world.
+              developer living in india & working remotely with the whole world.
             </h6>
             {/* <button className="cta1 mt-3 rounded-4xl bg-black border border-slate-800 hover:bg-slate-900 cursor-pointer w-56 text-white p-3.5">
               Ship stuff with me
@@ -81,7 +81,7 @@ const App = () => {
           </div>
           <div className="AvatarHighlight"></div>
         </div>
-        <div className="projectSection grid grid-cols-2 gap-12 p-10 w-[80%] mx-auto">
+        <div className="projectSection grid grid-cols-2 gap-12 p-10 w-[80%] mx-auto ">
           <div className="Individualproject relative border border-blue-950 rounded-2xl p-6 flex flex-col justify-between items-start gap-6 bg-white/15 backdrop-blur-[20px] shadow-[0_8px_32px_0_rgba(31,38,135,0.37)]">
             <div className="projectimage text-5xl text-center font-semibold flex justify-center items-center bg-cyan-950  rounded-xl h-74 w-full">
               <img
@@ -116,6 +116,11 @@ const App = () => {
                 <div className="1">
                   <TbBrandSocketIo className="w-6 h-6" />
                 </div>
+                <img
+                  src={avator}
+                  alt=""
+                  className="avator hidden w-52 absolute -top-52 right-0"
+                />
               </div>
               <div className="githublink">
                 <div className="tonnechat">
@@ -178,7 +183,7 @@ const App = () => {
             <img
               src={avator}
               alt=""
-              className="w-52 absolute -top-52 right-0"
+              className="avator w-52 absolute -top-52 right-0"
             />
           </div>
           <div className="Individualproject border border-blue-950 rounded-2xl p-6 flex flex-col justify-between items-start gap-6 bg-white/15 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] backdrop-blur-[20px] ">
@@ -304,15 +309,15 @@ const App = () => {
           </div>
         </div>
       </div>
-      <div className="aboutmeSection flex flex-col justify-center items-center p-10 h-[75vh] gap-6 font-semibold relative">
+      <div className="aboutmeSection flex flex-col justify-center items-center p-10 h-[75vh] gap-6 font-semibold ">
         <h6>ABOUT ME</h6>
-        <div className="flex justify-space-between items-center gap-10">
+        <div className="aboutme flex justify-space-between items-center gap-10 ">
           <img
             src={page2}
             alt=""
             className="w-52 h-52 rounded-4xl  hover:translate-2.5 transition-all hover:scale-105 cursor-pointer"
           />
-          <h1 className="text-5xl font-semibold w-[65vw] leading-20">
+          <h1 className="text-5xl font-semibold w-[65vw] leading-20 ">
             I'm a full-stack MERN developer passionate about building seamless,
             bug-free user experiences across both front-end and back-end
             systems.
@@ -320,8 +325,8 @@ const App = () => {
         </div>
       </div>
 
-      <div className="tech flex justify-center items-center p-10  h-[70vh]">
-        <div className="techKnown grid grid-cols-3 gap-8 p-10 m-auto w-[90%] h-[90%] -mr-5">
+      <div className="tech flex justify-center items-center p-10  min-h-[70vh]">
+        <div className="techKnown grid grid-cols-3 gap-8 p-10 m-auto w-[90%] min-h-[90%] -mr-5 ">
           <div className="techOne flex flex-col justify-center items-start">
             <p>
               Here is a little bit about languages and technologies, that I am
