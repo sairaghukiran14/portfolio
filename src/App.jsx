@@ -15,6 +15,7 @@ import {
 import avator from "./Images/page.png";
 import page2 from "./Images/page2.png";
 import { GradientText, MorphingText } from "./animations/TextAnimationDemo";
+// import projects from "./projects";
 const imagesearch =
   "https://res.cloudinary.com/dmqz317kh/image/upload/v1749726599/imagesearch_p9gvc8.png";
 const tonnechat =
@@ -23,11 +24,17 @@ const summariser =
   "https://res.cloudinary.com/dmqz317kh/image/upload/v1749726592/sumarier_fef4ms.png";
 const rayban =
   "https://res.cloudinary.com/dmqz317kh/image/upload/v1749726598/rayban_b4he6j.png";
+  const invoice =
+  "https://res.cloudinary.com/dmqz317kh/image/upload/v1750019399/Screenshot_2025-06-15_at_11.34.55_AM_c5vmv3.png";
+  const travel =
+    "https://res.cloudinary.com/dmqz317kh/image/upload/v1750019400/Screenshot_2025-06-15_at_3.40.40_PM_fnwe95.png";
+  
 const alphavimatechnolgiesLogo =
   "https://media.licdn.com/dms/image/v2/C510BAQF7VQBWBOx7SA/company-logo_200_200/company-logo_200_200/0/1630625180685/dsi_consulting_logo?e=1754524800&v=beta&t=v9oh0Nh1L2nsDL-8vmg0_X6XyUDWvQe0JKSlnVZgxUw";
 
 const App = () => {
   const contactRef = useRef(null);
+ 
 
   const scrollToContact = () => {
     contactRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -95,7 +102,13 @@ const App = () => {
               <img
                 src={tonnechat}
                 alt=""
-                className="rounded-xl w-full h-full"
+                className="rounded-xl w-full h-full cursor-pointer"
+                onClick={() =>
+                  window.open(
+                    "https://github.com/sairaghukiran14/tennochat",
+                    "_blank"
+                  )
+                }
               />
             </div>
             <div className="descript flex flex-col justify-center items-start gap-3 w-full">
@@ -150,7 +163,13 @@ const App = () => {
               <img
                 src={summariser}
                 alt=""
-                className="rounded-xl w-full h-full"
+                className="rounded-xl w-full h-full cursor-pointer"
+                onClick={() =>
+                  window.open(
+                    "https://articlesummarizerusing-ai.vercel.app/",
+                    "_blank"
+                  )
+                }
               />
             </div>
             <div className="descript flex flex-col justify-center items-start gap-3 w-full">
@@ -199,7 +218,10 @@ const App = () => {
               <img
                 src={imagesearch}
                 alt=""
-                className="rounded-xl w-full h-full"
+                className="rounded-xl w-full h-full cursor-pointer"
+                onClick={() =>
+                  window.open("https://isa-app.vercel.app/", "_blank")
+                }
               />
             </div>
             <div className="descript flex flex-col justify-center items-start gap-3 w-full">
@@ -240,7 +262,17 @@ const App = () => {
           </div>
           <div className="Individualproject border border-blue-950 rounded-2xl p-6 flex flex-col justify-between items-start gap-6 bg-white/15 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] backdrop-blur-[20px] ">
             <div className="projectimage text-5xl text-center font-semibold flex justify-center items-center bg-cyan-950  rounded-xl h-74 w-full">
-              <img src={rayban} alt="" className="rounded-xl w-full h-full" />
+              <img
+                src={rayban}
+                alt=""
+                className="rounded-xl w-full h-full cursor-pointer"
+                onClick={() =>
+                  window.open(
+                    "https://sheryjsanimatedwebsite.vercel.app/",
+                    "_blank"
+                  )
+                }
+              />
             </div>
             <div className="descript flex flex-col justify-center items-start gap-3 w-full">
               <div className="projectShortDescription">
@@ -270,6 +302,101 @@ const App = () => {
                     onClick={() =>
                       window.open(
                         "https://github.com/sairaghukiran14/sheryjsanimatedwebsite",
+                        "_blank"
+                      )
+                    }
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="Individualproject border border-blue-950 rounded-2xl p-6 flex flex-col justify-between items-start gap-6 bg-white/15 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] backdrop-blur-[20px] ">
+            <div className="projectimage text-5xl text-center font-semibold flex justify-center items-center bg-cyan-950  rounded-xl h-74 w-full">
+              <img
+                src={invoice}
+                alt=""
+                className="rounded-xl w-full h-full cursor-pointer"
+                onClick={() =>
+                  window.open("https://hasa-invoice.vercel.app/", "_blank")
+                }
+              />
+            </div>
+            <div className="descript flex flex-col justify-center items-start gap-3 w-full">
+              <div className="projectShortDescription">
+                An app that allows you to generate invoices and download them as
+                PDFs.
+              </div>
+              <div className="projectHeader text-4xl font-semibold">
+                Hasa Invoice
+              </div>
+            </div>
+
+            <div className="border-t border-gray-500 p-4 pt-8 w-full flex justify-between items-center">
+              <div className="techStackUsed flex gap-2 ">
+                <div className="1">
+                  <FaReact className="w-6 h-6" />
+                </div>
+                <div className="1">
+                  <FaJsSquare className="w-6 h-6" />
+                </div>
+                <div className="1">
+                  <RiTailwindCssFill className="w-6 h-6" />
+                </div>
+              </div>
+              <div className="githublink">
+                <div className="1">
+                  <FaGithub
+                    className="w-6 h-6 cursor-pointer hover:scale-110 transition-all"
+                    onClick={() =>
+                      window.open(
+                        "https://github.com/sairaghukiran14/HasaInvoice",
+                        "_blank"
+                      )
+                    }
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="Individualproject border border-blue-950 rounded-2xl p-6 flex flex-col justify-between items-start gap-6 bg-white/15 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] backdrop-blur-[20px] ">
+            <div className="projectimage text-5xl text-center font-semibold flex justify-center items-center bg-cyan-950  rounded-xl h-74 w-full">
+              <img
+                src={travel}
+                alt=""
+                className="rounded-xl w-full h-full cursor-pointer"
+                onClick={() =>
+                  window.open("https://travelguru-psi.vercel.app/", "_blank")
+                }
+              />
+            </div>
+            <div className="descript flex flex-col justify-center items-start gap-3 w-full">
+              <div className="projectShortDescription">
+                A landing page for Travel planner, showcasing responsivness.
+              </div>
+              <div className="projectHeader text-4xl font-semibold">
+                TravelGuru
+              </div>
+            </div>
+
+            <div className="border-t border-gray-500 p-4 pt-8 w-full flex justify-between items-center">
+              <div className="techStackUsed flex gap-2 ">
+                <div className="1">
+                  <FaReact className="w-6 h-6" />
+                </div>
+                <div className="1">
+                  <FaJsSquare className="w-6 h-6" />
+                </div>
+                <div className="1">
+                  <RiTailwindCssFill className="w-6 h-6" />
+                </div>
+              </div>
+              <div className="githublink">
+                <div className="1">
+                  <FaGithub
+                    className="w-6 h-6 cursor-pointer hover:scale-110 transition-all"
+                    onClick={() =>
+                      window.open(
+                        "https://github.com/sairaghukiran14/TravelGuruLandingpage",
                         "_blank"
                       )
                     }
