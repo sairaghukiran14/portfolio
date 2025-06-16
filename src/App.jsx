@@ -28,7 +28,6 @@ const rayban =
   "https://res.cloudinary.com/dmqz317kh/image/upload/v1750019399/Screenshot_2025-06-15_at_11.34.55_AM_c5vmv3.png";
   const travel =
     "https://res.cloudinary.com/dmqz317kh/image/upload/v1750019400/Screenshot_2025-06-15_at_3.40.40_PM_fnwe95.png";
-  
 const alphavimatechnolgiesLogo =
   "https://res.cloudinary.com/dmqz317kh/image/upload/v1750102254/dsi_consulting_logo_nykyth.jpg";
 
@@ -98,7 +97,7 @@ const App = () => {
         </div>
         <div className="projectSection grid grid-cols-2 gap-12 p-10 w-[80%] mx-auto ">
           <div className="Individualproject relative border border-blue-950 rounded-2xl p-6 flex flex-col justify-between items-start gap-6 bg-white/15 backdrop-blur-[20px] shadow-[0_8px_32px_0_rgba(31,38,135,0.37)]">
-            <div className="projectimage text-5xl text-center font-semibold flex justify-center items-center bg-cyan-950  rounded-xl h-74 w-full">
+            <div className="projectimage text-5xl text-center font-semibold flex justify-center items-center bg-cyan-950  rounded-xl min-min-h-74 w-full">
               <img
                 src={tonnechat}
                 alt=""
@@ -159,7 +158,7 @@ const App = () => {
             </div>
           </div>
           <div className="Individualproject border border-blue-950 rounded-2xl p-6 flex flex-col justify-between items-start gap-6 bg-white/15 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] backdrop-blur-[20px] ">
-            <div className="projectimage text-5xl text-center font-semibold flex justify-center items-center bg-cyan-950  rounded-xl h-74 w-full">
+            <div className="projectimage text-5xl text-center font-semibold flex justify-center items-center bg-cyan-950  rounded-xl min-h-74 w-full">
               <img
                 src={summariser}
                 alt=""
@@ -214,7 +213,7 @@ const App = () => {
             />
           </div>
           <div className="Individualproject border border-blue-950 rounded-2xl p-6 flex flex-col justify-between items-start gap-6 bg-white/15 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] backdrop-blur-[20px] ">
-            <div className="projectimage text-5xl text-center font-semibold flex justify-center items-center bg-cyan-950  rounded-xl h-74 w-full">
+            <div className="projectimage text-5xl text-center font-semibold flex justify-center items-center bg-cyan-950  rounded-xl min-h-74 w-full">
               <img
                 src={imagesearch}
                 alt=""
@@ -261,7 +260,7 @@ const App = () => {
             </div>
           </div>
           <div className="Individualproject border border-blue-950 rounded-2xl p-6 flex flex-col justify-between items-start gap-6 bg-white/15 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] backdrop-blur-[20px] ">
-            <div className="projectimage text-5xl text-center font-semibold flex justify-center items-center bg-cyan-950  rounded-xl h-74 w-full">
+            <div className="projectimage text-5xl text-center font-semibold flex justify-center items-center bg-cyan-950  rounded-xl min-h-74 w-full">
               <img
                 src={rayban}
                 alt=""
@@ -311,7 +310,7 @@ const App = () => {
             </div>
           </div>
           <div className="Individualproject border border-blue-950 rounded-2xl p-6 flex flex-col justify-between items-start gap-6 bg-white/15 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] backdrop-blur-[20px] ">
-            <div className="projectimage text-5xl text-center font-semibold flex justify-center items-center bg-cyan-950  rounded-xl h-74 w-full">
+            <div className="projectimage text-5xl text-center font-semibold flex justify-center items-center bg-cyan-950  rounded-xl min-h-74 w-full">
               <img
                 src={invoice}
                 alt=""
@@ -359,7 +358,7 @@ const App = () => {
             </div>
           </div>
           <div className="Individualproject border border-blue-950 rounded-2xl p-6 flex flex-col justify-between items-start gap-6 bg-white/15 shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] backdrop-blur-[20px] ">
-            <div className="projectimage text-5xl text-center font-semibold flex justify-center items-center bg-cyan-950  rounded-xl h-74 w-full">
+            <div className="projectimage text-5xl text-center font-semibold flex justify-center items-center bg-cyan-950  rounded-xl min-h-74 w-full">
               <img
                 src={travel}
                 alt=""
