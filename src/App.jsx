@@ -30,7 +30,7 @@ const rayban =
     "https://res.cloudinary.com/dmqz317kh/image/upload/v1750019400/Screenshot_2025-06-15_at_3.40.40_PM_fnwe95.png";
   
 const alphavimatechnolgiesLogo =
-  "https://media.licdn.com/dms/image/v2/C510BAQF7VQBWBOx7SA/company-logo_200_200/company-logo_200_200/0/1630625180685/dsi_consulting_logo?e=1754524800&v=beta&t=v9oh0Nh1L2nsDL-8vmg0_X6XyUDWvQe0JKSlnVZgxUw";
+  "https://res.cloudinary.com/dmqz317kh/image/upload/v1750102254/dsi_consulting_logo_nykyth.jpg";
 
 const App = () => {
   const contactRef = useRef(null);

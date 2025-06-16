@@ -7,7 +7,7 @@
  const rayban =
    "https://res.cloudinary.com/dmqz317kh/image/upload/v1749726598/rayban_b4he6j.png";
  
- const projects = [
+ export const projects = [
     {
       id: 1,
       name: "TonneChat",
