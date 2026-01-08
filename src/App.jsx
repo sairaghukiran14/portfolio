@@ -77,7 +77,7 @@ const App = () => {
               developer living in india & working remotely with the whole world.
             </h6>
             {/* <button className="cta1 mt-3 rounded-4xl bg-black border border-slate-800 hover:bg-slate-900 cursor-pointer w-56 text-white p-3.5">
-              Ship stuff with me
+              Ship Projects with me
             </button> */}
             {/* rainbow button */}
             <button class="group relative inline-block items-center justify-center overflow-hidden rounded-4xl px-8 py-4 font-medium text-indigo-600 shadow-2xl hover:cursor-pointer mt-5 hover:scale-105 transition-all duration-1500">
@@ -90,7 +90,7 @@ const App = () => {
                 <span class="absolute bottom-0 right-0 -mr-10 h-24 w-24 rounded-full bg-blue-500 blur-md"></span>
                 <span class="absolute bottom-0 right-0 -mr-20 h-24 w-24 rounded-full bg-blue-500 blur-md"></span>
               </span>
-              <span class="relative text-white"> Ship stuff with me</span>
+              <span class="relative text-white"> Ship Projects with me</span>
             </button>
           </div>
           <div className="AvatarHighlight"></div>
