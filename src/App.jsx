@@ -11,7 +11,7 @@ import {
   FaCss3Alt,
   FaJsSquare,
   FaReact,
-} from "react-icons/fa";
+} from "react-icons/fa"; 
 import avator from "./Images/page.png";
 import page2 from "./Images/page2.png";
 import { GradientText, MorphingText } from "./animations/TextAnimationDemo";
