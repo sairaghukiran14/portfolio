@@ -1,0 +1,140 @@
+export const NAV_LINKS = [
+  "Work",
+  "Skills",
+  "Experience",
+  "Projects",
+  "Contact",
+];
+
+export const SKILLS_FEATURED = [
+  {
+    icon: "⚛️",
+    name: "React.js",
+    desc: "Advanced hooks, performance, architecture",
+  },
+  { icon: "▲", name: "Next.js", desc: "SSR, ISR, App Router, full-stack" },
+  {
+    icon: "🔷",
+    name: "TypeScript",
+    desc: "Strict typing, generics, utility types",
+  },
+  { icon: "📦", name: "Redux", desc: "Complex state, middleware, RTK" },
+  { icon: "🟢", name: "Node.js", desc: "REST APIs, auth, real-time backends" },
+  {
+    icon: "🔌",
+    name: "Socket.IO",
+    desc: "Real-time events, rooms, namespaces",
+  },
+];
+
+export const EXPERIENCE = [
+  {
+    company: "Alphavima Technologies",
+    role: "Associate Software Engineer",
+    period: "Jul 2024 – Present",
+    live: true,
+    color: "#0a84ff",
+    bg: "linear-gradient(135deg,#0a1628,#0d1e40)",
+    icon: "🏢",
+    highlights: [
+      { metric: "+30%", desc: "Asset management efficiency" },
+      { metric: "+25%", desc: "Faster React rendering" },
+      { metric: "400+", desc: "Assets managed in real-time" },
+    ],
+    bullets: [
+      "Designed React Asset Tracker with advanced grid, search & filters",
+      "Built Dynamic Scheduler for 400+ assets with live event pop-ups",
+      "Configurable Kanban Board via Redux & Context API on Dataverse",
+      "Integrated AI suggestion agents and real-time Chat UI",
+      "Deployed Twilio WhatsApp API for Dynamics 365 CRM",
+      "Custom PCF Controls + ML workflow automation",
+    ],
+  },
+  {
+    company: "Artificial Techligence",
+    role: "Full Stack Web Developer Intern",
+    period: "Feb 2024 – May 2024",
+    live: false,
+    color: "#30d158",
+    bg: "linear-gradient(135deg,#0a1a14,#0d2818)",
+    icon: "🚀",
+    highlights: [
+      { metric: "750+", desc: "Users protected via JWT/bcrypt" },
+      { metric: "+30%", desc: "Response efficiency gained" },
+      { metric: "AWS", desc: "Scalable portal deployment" },
+    ],
+    bullets: [
+      "JWT + bcrypt auth system securing 750+ users",
+      "Support ticket system → 30% faster response efficiency",
+      "Figma UI/UX → TailwindCSS implementation",
+      "Career Catalyst Portal deployed on AWS",
+    ],
+  },
+];
+
+export const PROJECTS = [
+  {
+    name: "Tenn Chat",
+    tagline: "Real-time. Instant. Connected.",
+    desc: "A full-featured real-time chat application with group admin controls, JWT auth, and beautiful responsive UI — powered by Socket.IO, React, and MongoDB.",
+    emoji: "💬",
+    chips: ["React", "Redux", "Socket.IO", "MongoDB", "Express", "JWT"],
+    grad: "linear-gradient(135deg,#0f1a3a 0%,#1a0f3a 50%,#0f1a3a 100%)",
+    accent: "#5ac8fa",
+    metrics: [
+      ["Real-time", "WebSockets"],
+      ["Auth", "JWT+Roles"],
+      ["UI", "Chakra"],
+    ],
+  },
+  {
+    name: "AI Summarizer",
+    tagline: "Any article. Under 8 seconds.",
+    desc: "Drop in any URL. Get a crisp, AI-generated summary in under 8 seconds. Cookie-based caching delivers 15% better repeat-visit efficiency.",
+    emoji: "🤖",
+    chips: ["React", "AI API", "Cookie Cache", "REST"],
+    grad: "linear-gradient(135deg,#0a1a2e 0%,#1a1a2e 50%,#0a1428 100%)",
+    accent: "#bf5af2",
+    metrics: [
+      ["Speed", "<8 sec"],
+      ["Efficiency", "+15%"],
+      ["Model", "AI API"],
+    ],
+  },
+];
+
+export const ALL_SKILLS = [
+  "React.js",
+  "Next.js",
+  "TypeScript",
+  "JavaScript ES6+",
+  "Redux",
+  "TanStack Query",
+  "TailwindCSS",
+  "SASS",
+  "Material UI",
+  "Figma",
+  "CSS3",
+  "HTML5",
+  "Animation",
+  "Node.js",
+  "Express.js",
+  "MongoDB",
+  "GraphQL",
+  "REST APIs",
+  "Socket.IO",
+  "JWT",
+  "bcrypt",
+  "React Native",
+  "Webpack",
+  "Axios",
+  "Jest",
+  "Git",
+  "GitHub",
+  "AWS",
+  "Azure",
+  "Agile",
+  "SEO",
+  "Twilio API",
+  "PCF Controls",
+];
