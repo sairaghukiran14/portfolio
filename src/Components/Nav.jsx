@@ -29,9 +29,14 @@ export function Nav() {
           {clock}
         </span>
       </div>
-      <a href="mailto:avulasairaghukiran@gmail.com">
-        <button className="nav-cta">Get in touch</button>
-      </a>
+      <div style={{ display: "flex", gap: "12px", alignItems: "center" }}>
+        <a href="/resume.pdf" download="Sai_Raghu_Kiran_Resume.pdf">
+          <button className="nav-cta" style={{ background: "transparent", border: "0.5px solid rgba(255,255,255,0.3)", color: "var(--white)" }}>Resume</button>
+        </a>
+        <a href="mailto:avulasairaghukiran@gmail.com">
+          <button className="nav-cta">Get in touch</button>
+        </a>
+      </div>
     </nav>
   );
 }

@@ -25,6 +25,9 @@ export function Hero() {
         <a href="#work">
           <button className="btn-primary">See My Work →</button>
         </a>
+        <a href="/resume.pdf" download="Sai_Raghu_Kiran_Resume.pdf">
+          <button className="btn-ghost" style={{ background: "rgba(255,255,255,0.05)", borderColor: "rgba(255,255,255,0.2)" }}>Download Resume</button>
+        </a>
         <a href="#contact">
           <button className="btn-ghost">Get in Touch</button>
         </a>
