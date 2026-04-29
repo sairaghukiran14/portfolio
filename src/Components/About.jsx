@@ -13,7 +13,9 @@ export function About() {
           </h2>
         </div>
         <p className="about-desc reveal reveal-d1">
-          I'm a <strong>Full Stack Developer</strong> with 2+ years of experience designing and shipping end-to-end web applications across frontend, backend, database, and cloud layers using <strong>React.js, Node.js, TypeScript, and PostgreSQL</strong>.
+          I'm a <strong>Full Stack Developer</strong> with 2+ years of experience designing and shipping scalable, end-to-end web applications across frontend, backend, database, cloud, and AI layers. I specialize in building high-performance systems using <strong>React.js, Node.js, TypeScript, AWS, and PostgreSQL</strong>, while leveraging modern AI tools like <strong>Claude Code, Gemini, and Antigravity</strong> to accelerate development, automate workflows, and enhance product intelligence.
+
+          I focus on delivering production-ready solutions with clean architecture, reusable components, and seamless integrations — combining engineering precision with AI-driven efficiency to build smarter, faster, and more impactful applications.
         </p>
         {/* <p className="about-desc reveal reveal-d2" style={{ marginBottom: 32 }}>
           Currently at <strong>Alphavima Technologies</strong>, I ship products
@@ -57,7 +59,9 @@ export function About() {
       </div>
       <div className="about-visual reveal reveal-d1">
         <div className="avatar-card">
-          <div className="av-avatar">ASRK</div>
+
+          <img src="./ProfilePic.png" alt="" className="av-avatar" />
+
           <div className="av-name">Avula Sai Raghu Kiran</div>
           <div className="av-role">
             Full Stack Developer · React & Node.js · AWS

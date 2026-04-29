@@ -1217,6 +1217,11 @@ img {
     gap: 0;
   }
 
+  .profile-pic {
+    width: 200px;
+    border-radius: 50%;
+  }
+
   .metric-item {
     border-right: none;
     border-bottom: 0.5px solid rgba(255, 255, 255, 0.08);
