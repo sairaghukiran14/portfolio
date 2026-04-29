@@ -13,16 +13,13 @@ export function About() {
           </h2>
         </div>
         <p className="about-desc reveal reveal-d1">
-          I'm a <strong>Frontend Developer</strong> with 2+ years of specialized
-          experience in <strong>React.js and TypeScript</strong>. I build
-          enterprise-grade tools, real-time apps, and AI-powered interfaces that
-          make a measurable difference.
+          I'm a <strong>Full Stack Developer</strong> with 2+ years of experience designing and shipping end-to-end web applications across frontend, backend, database, and cloud layers using <strong>React.js, Node.js, TypeScript, and PostgreSQL</strong>.
         </p>
-        <p className="about-desc reveal reveal-d2" style={{ marginBottom: 32 }}>
+        {/* <p className="about-desc reveal reveal-d2" style={{ marginBottom: 32 }}>
           Currently at <strong>Alphavima Technologies</strong>, I ship products
           used by real teams every day — from asset schedulers to CRM
           integrations.
-        </p>
+        </p> */}
         <div className="contact-row reveal reveal-d3">
           {[
             {
@@ -36,7 +33,7 @@ export function About() {
               href: "https://linkedin.com/in/avulasairaghukiran",
             },
             { icon: "📞", text: "+91 8332020170", href: "tel:+918332020170" },
-            { icon: "📍", text: "India · Open to Remote", href: null },
+            { icon: "📍", text: "Bengaluru · Available to Relocate", href: null },
           ].map((c, i) =>
             c.href ? (
               <a
@@ -60,12 +57,12 @@ export function About() {
       </div>
       <div className="about-visual reveal reveal-d1">
         <div className="avatar-card">
-          <div className="av-avatar">SK</div>
+          <div className="av-avatar">ASRK</div>
           <div className="av-name">Avula Sai Raghu Kiran</div>
           <div className="av-role">
-            Frontend Engineer · React & Next.js · UI/UX
+            Full Stack Developer · React & Node.js · AWS
           </div>
-          <div className="av-badge">Available for Hire</div>
+          <div className="av-badge">Immediate Joiner</div>
 
           <div
             style={{

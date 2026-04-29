@@ -4,7 +4,7 @@ export function CTA() {
       <div className="cta-glow" />
       <div className="reveal">
         <h2 className="cta-title">
-          Let's build something<br/><em>extraordinary.</em>
+          Let's build something<br /><em>extraordinary.</em>
         </h2>
         <p className="cta-sub">
           I'm actively looking for new opportunities. Whether you have a project, a role, or just want to chat — my inbox is open.

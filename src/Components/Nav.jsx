@@ -17,7 +17,7 @@ export function Nav() {
       style={{ background: scrolled ? "rgba(0,0,0,0.88)" : "rgba(0,0,0,0.72)" }}
     >
       <div className="nav-logo">
-        SK<span>.</span>
+        ASRK<span>.</span>
       </div>
       <div className="nav-links">
         {NAV_LINKS.map((l) => (

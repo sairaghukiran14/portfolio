@@ -8,7 +8,7 @@ export function Hero() {
       <CodeCard side="left" />
       <CodeCard side="right" />
 
-      <div className="hero-eyebrow">Frontend Engineer · React & Next.js</div>
+      <div className="hero-eyebrow">Full Stack Developer · React & Node.js</div>
       <h1 className="hero-title">
         <span className="line1">Crafted with code.</span>
         <span className="line2">Powered by React.</span>
@@ -18,7 +18,7 @@ export function Hero() {
         <strong style={{ color: "rgba(255,255,255,.85)", fontWeight: 600 }}>
           Sai Raghu Kiran
         </strong>{" "}
-        — a Frontend Engineer who turns complex problems into elegant, fast, and
+        — a Full Stack Developer who turns complex problems into elegant, fast, and
         beautiful digital experiences.
       </p>
       <div className="hero-actions">

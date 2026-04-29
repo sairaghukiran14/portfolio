@@ -2,7 +2,7 @@ import { useState } from "react";
 import { EXPERIENCE } from "../Hooks/Data";
 
 export function Experience() {
-  const [expanded, setExpanded] = useState(0);
+  const [expanded, setExpanded] = useState(EXPERIENCE.map((_, i) => i));
   return (
     <section className="section" id="experience">
       <div className="divider" style={{ marginBottom: 100 }} />
@@ -25,7 +25,7 @@ export function Experience() {
             key={i}
             className={`exp-card reveal reveal-d${i + 1}`}
             style={{ background: e.bg, cursor: "pointer" }}
-            onClick={() => setExpanded(expanded === i ? -1 : i)}
+            onClick={() => setExpanded(prev => prev.includes(i) ? prev.filter(x => x !== i) : [...prev, i])}
           >
             <div className="exp-header">
               <div className="exp-header-left">
@@ -57,7 +57,7 @@ export function Experience() {
                     color: "rgba(255,255,255,.3)",
                     fontSize: 20,
                     transform:
-                      expanded === i ? "rotate(180deg)" : "rotate(0deg)",
+                      expanded.includes(i) ? "rotate(180deg)" : "rotate(0deg)",
                     transition: "transform .3s",
                   }}
                 >
@@ -77,7 +77,7 @@ export function Experience() {
               ))}
             </div>
 
-            {expanded === i && (
+            {expanded.includes(i) && (
               <div className="exp-bullets-wrap">
                 {e.bullets.map((b, j) => (
                   <div key={j} className="exp-bullet">

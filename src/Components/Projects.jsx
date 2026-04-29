@@ -6,7 +6,7 @@ export function Projects() {
       <div className="divider" style={{ marginBottom: 100 }} />
       <div className="reveal">
         <div className="section-eyebrow">Projects</div>
-        <h2 className="section-title large">Built from scratch.<br/>Shipped to users.</h2>
+        <h2 className="section-title large">Built from scratch.<br />Shipped to users.</h2>
         <p className="section-sub">Personal projects that solve real problems — from real-time communication to AI-powered tooling.</p>
       </div>
 
