@@ -43,7 +43,7 @@ export function Experience() {
                   <div className="exp-role-text">{e.role}</div>
                 </div>
               </div>
-              <div style={{ display: "flex", gap: 10, alignItems: "center" }}>
+              <div className="exp-header-right" style={{ display: "flex", gap: 10, alignItems: "center" }}>
                 {e.live ? (
                   <div className="exp-live-badge">
                     <div className="exp-live-dot" />
