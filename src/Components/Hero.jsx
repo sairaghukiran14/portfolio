@@ -8,18 +8,18 @@ export function Hero() {
       <CodeCard side="left" />
       <CodeCard side="right" />
 
-      <div className="hero-eyebrow">Full Stack Developer · React & Node.js</div>
+      <div className="hero-eyebrow">Frontend Developer · React · Next.js · TypeScript</div>
       <h1 className="hero-title">
         <span className="line1">Crafted with code.</span>
-        <span className="line2">Powered by React.</span>
+        <span className="line2">Powered by Next.js.</span>
       </h1>
       <p className="hero-sub">
         Hi, I'm{" "}
         <strong style={{ color: "rgba(255,255,255,.85)", fontWeight: 600 }}>
           Sai Raghu Kiran
         </strong>{" "}
-        — a Full Stack Developer who turns complex problems into elegant, fast, and
-        beautiful digital experiences.
+        — a Frontend Developer building enterprise CRM &amp; SaaS products with React,
+        TypeScript, and Next.js, turning complex problems into fast, accessible interfaces.
       </p>
       <div className="hero-actions">
         <a href="#work">
@@ -35,9 +35,9 @@ export function Hero() {
 
       <div className="hero-metrics">
         {[
-          { num: "+30%", label: "Efficiency Boost" },
           { num: "+25%", label: "Faster Rendering" },
-          { num: "400+", label: "Assets Managed" },
+          { num: "−35%", label: "Smaller Bundles" },
+          { num: "96+", label: "Lighthouse Score" },
           { num: "2+", label: "Years Experience" },
         ].map((m, i) => (
           <div key={i} className="metric-item">

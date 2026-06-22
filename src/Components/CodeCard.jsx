@@ -13,7 +13,7 @@ export function CodeCard({ side }) {
           {"  "}
           <span className="str">role</span>
           <span className="op">:</span>{" "}
-          <span className="str">"Full stack Dev"</span>,{"\n"}
+          <span className="str">"Frontend Dev"</span>,{"\n"}
           {"  "}
           <span className="str">xp</span>
           <span className="op">:</span> <span className="str">"2+ years"</span>,

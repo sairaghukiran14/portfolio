@@ -129,10 +129,10 @@ export const MatrixText = ({
   useEffect(() => {
     const matrix = "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%+-/~{[|`]}";
     const interval = setInterval(() => {
-      setChars((prev) =>
+      setChars(() =>
         text
           .split("")
-          .map((char, i) =>
+          .map((char) =>
             Math.random() > 0.7
               ? matrix[Math.floor(Math.random() * matrix.length)]
               : char

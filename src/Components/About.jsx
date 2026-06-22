@@ -13,9 +13,9 @@ export function About() {
           </h2>
         </div>
         <p className="about-desc reveal reveal-d1">
-          I'm a <strong>Full Stack Developer</strong> with 2+ years of experience designing and shipping scalable, end-to-end web applications across frontend, backend, database, cloud, and AI layers. I specialize in building high-performance systems using <strong>React.js, Node.js, TypeScript, AWS, and PostgreSQL</strong>, while leveraging modern AI tools like <strong>Claude Code, Gemini, and Antigravity</strong> to accelerate development, automate workflows, and enhance product intelligence.
+          I'm a <strong>Frontend Developer</strong> with 2+ years building enterprise CRM and SaaS products using <strong>React, TypeScript, and Next.js</strong>. I specialize in the <strong>Next.js App Router (v13–15)</strong>, SSR/SSG/ISR rendering strategies, <strong>Redux Toolkit</strong> state management, and <strong>TanStack Query</strong> data-fetching.
 
-          I focus on delivering production-ready solutions with clean architecture, reusable components, and seamless integrations — combining engineering precision with AI-driven efficiency to build smarter, faster, and more impactful applications.
+          I've delivered measurable production wins — 25% faster rendering, 35% smaller bundles, and 96+ Lighthouse scores — and shipped AI-integrated interfaces on Microsoft Dynamics 365. Immediate joiner based in Bengaluru, focused on clean architecture, reusable components, and high-performance, accessible UI.
         </p>
         {/* <p className="about-desc reveal reveal-d2" style={{ marginBottom: 32 }}>
           Currently at <strong>Alphavima Technologies</strong>, I ship products
@@ -64,7 +64,7 @@ export function About() {
 
           <div className="av-name">Avula Sai Raghu Kiran</div>
           <div className="av-role">
-            Full Stack Developer · React & Node.js · AWS
+            Frontend Developer · React · Next.js · TypeScript
           </div>
           <div className="av-badge">Immediate Joiner</div>
 
@@ -79,9 +79,9 @@ export function About() {
             }}
           >
             {[
-              { n: "+30%", l: "Efficiency" },
               { n: "+25%", l: "Speed" },
-              { n: "400+", l: "Assets" },
+              { n: "−35%", l: "Bundles" },
+              { n: "96+", l: "Lighthouse" },
               { n: "750+", l: "Users" },
             ].map((s, i) => (
               <div

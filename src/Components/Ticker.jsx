@@ -1,30 +1,19 @@
 export function Ticker() {
-  const items = [
-    ["⚛️", "React.js"],
+  const base = [
     ["▲", "Next.js"],
+    ["⚛️", "React.js"],
     ["🔷", "TypeScript"],
-    ["📦", "Redux"],
+    ["📦", "Redux Toolkit"],
+    ["🔄", "TanStack Query"],
     ["🟢", "Node.js"],
-    ["🔌", "Socket.IO"],
     ["☁️", "AWS"],
     ["🎨", "Figma"],
-    ["🗄️", "MongoDB"],
-    ["🧪", "Jest"],
-    ["📡", "GraphQL"],
-    ["💨", "Tailwind"],
-    ["⚛️", "React.js"],
-    ["▲", "Next.js"],
-    ["🔷", "TypeScript"],
-    ["📦", "Redux"],
-    ["🟢", "Node.js"],
-    ["🔌", "Socket.IO"],
-    ["☁️", "AWS"],
-    ["🎨", "Figma"],
-    ["🗄️", "MongoDB"],
+    ["🗄️", "PostgreSQL"],
     ["🧪", "Jest"],
     ["📡", "GraphQL"],
     ["💨", "Tailwind"],
   ];
+  const items = [...base, ...base];
   return (
     <div className="ticker-wrap">
       <div className="ticker-track">
