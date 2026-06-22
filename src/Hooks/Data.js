@@ -1,5 +1,5 @@
 export const NAV_LINKS = [
-  "Work",
+  "About",
   "Skills",
   "Experience",
   "Projects",

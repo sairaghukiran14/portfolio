@@ -1,42 +1,39 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { NAV_LINKS } from "../Hooks/Data";
-import { useClock } from "../Hooks/useClock";
 
 export function Nav() {
-  const clock = useClock();
-  const [scrolled, setScrolled] = useState(false);
+  const [hidden, setHidden] = useState(false);
+  const lastY = useRef(0);
+
   useEffect(() => {
-    const h = () => setScrolled(window.scrollY > 40);
-    window.addEventListener("scroll", h);
-    return () => window.removeEventListener("scroll", h);
+    const onScroll = () => {
+      const y = window.scrollY;
+      // hide when scrolling down past the hero, reveal on scroll up
+      setHidden(y > lastY.current && y > 400);
+      lastY.current = y;
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   return (
-    <nav
-      className="nav"
-      style={{ background: scrolled ? "rgba(0,0,0,0.88)" : "rgba(0,0,0,0.72)" }}
-    >
-      <div className="nav-logo">
-        ASRK<span>.</span>
-      </div>
+    <nav className={`nav ${hidden ? "hidden" : ""}`}>
+      <a href="#home" className="nav-logo">
+        <span className="dot" />
+        Sai Raghu Kiran
+      </a>
+
       <div className="nav-links">
         {NAV_LINKS.map((l) => (
           <a key={l} href={`#${l.toLowerCase()}`}>
             {l}
           </a>
         ))}
-        <span style={{ fontSize: 12, color: "rgba(255,255,255,.35)" }}>
-          {clock}
-        </span>
       </div>
-      <div style={{ display: "flex", gap: "12px", alignItems: "center" }}>
-        <a href="/resume.pdf" download="Sai_Raghu_Kiran_Resume.pdf">
-          <button className="nav-cta" style={{ background: "transparent", border: "0.5px solid rgba(255,255,255,0.3)", color: "var(--white)" }}>Resume</button>
-        </a>
-        <a href="mailto:avulasairaghukiran@gmail.com">
-          <button className="nav-cta">Get in touch</button>
-        </a>
-      </div>
+
+      <a href="mailto:avulasairaghukiran@gmail.com" data-magnetic="0.4">
+        <button className="nav-cta">Get in touch</button>
+      </a>
     </nav>
   );
 }

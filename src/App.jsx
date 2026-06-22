@@ -1,28 +1,36 @@
-
-import { About } from "./Components/About";
-import { CTA } from "./Components/CTA";
-import { Experience } from "./Components/Experience";
-import { Footer } from "./Components/Footer";
-import { Hero } from "./Components/Hero";
+import { useRef } from "react";
+import { Background } from "./Components/Background";
+import { Cursor } from "./Components/Cursor";
 import { Nav } from "./Components/Nav";
-import { Projects } from "./Components/Projects";
+import { Hero } from "./Components/Hero";
+import { About } from "./Components/About";
 import { Skills } from "./Components/Skills";
-import { useScrollReveal } from "./Hooks/useScrollReveal";
+import { Experience } from "./Components/Experience";
+import { Projects } from "./Components/Projects";
+import { CTA } from "./Components/CTA";
+import { Footer } from "./Components/Footer";
+import { useSiteMotion } from "./Hooks/useSiteMotion";
+
 function App() {
-  useScrollReveal();
+  const root = useRef(null);
+  useSiteMotion(root);
+
   return (
-    <>
-      {/* <style>{CSS}</style> */}
+    <div ref={root}>
+      <Background />
+      <Cursor />
       <Nav />
-      <Hero />
-      <About />
-      <Skills />
-      <Experience />
-      <Projects />
-      <CTA />
+      <main>
+        <Hero />
+        <About />
+        <Skills />
+        <Experience />
+        <Projects />
+        <CTA />
+      </main>
       <Footer />
-    </>
+    </div>
   );
 }
 
-export default App
+export default App;
