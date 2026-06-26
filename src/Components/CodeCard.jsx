@@ -13,10 +13,10 @@ export function CodeCard({ side }) {
           {"  "}
           <span className="str">role</span>
           <span className="op">:</span>{" "}
-          <span className="str">"Frontend Dev"</span>,{"\n"}
+          <span className="str">"Full Stack Dev"</span>,{"\n"}
           {"  "}
-          <span className="str">xp</span>
-          <span className="op">:</span> <span className="str">"2+ years"</span>,
+          <span className="str">stack</span>
+          <span className="op">:</span> <span className="str">"React · Node · PG"</span>,
           {"\n"}
           <span className="op">{`}`}</span>
         </div>
@@ -33,13 +33,13 @@ export function CodeCard({ side }) {
         <span className="op">// </span>
         <span className="str">+25% faster ⚡</span>
         {"\n"}
-        <span className="fn">deploy</span>
+        <span className="fn">ship</span>
         <span className="op">(</span>
-        <span className="str">features</span>
+        <span className="str">fullStack</span>
         <span className="op">)</span>
         {"\n"}
         <span className="op">// </span>
-        <span className="str">+30% efficiency 🚀</span>
+        <span className="str">front → back 🚀</span>
       </div>
     </div>
   );

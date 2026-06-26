@@ -5,7 +5,7 @@ import { CodeCard } from "./CodeCard";
 
 const METRICS = [
   { num: "+25%", label: "Faster Rendering" },
-  { num: "−35%", label: "Smaller Bundles" },
+  { num: "750+", label: "Users Secured" },
   { num: "96+", label: "Lighthouse Score" },
   { num: "2+", label: "Years Experience" },
 ];
@@ -62,7 +62,7 @@ export function Hero() {
 
       <h1 className="hero-title">
         <span className="line">
-          <span className="line-inner">Frontend that</span>
+          <span className="line-inner">Full-stack that</span>
         </span>
         <span className="line">
           <span className="line-inner">
@@ -72,9 +72,10 @@ export function Hero() {
       </h1>
 
       <p className="hero-sub">
-        Hi, I'm <strong>Sai Raghu Kiran</strong> — a Frontend Developer building enterprise
-        CRM &amp; SaaS products with <strong>React</strong>, <strong>TypeScript</strong> &amp;{" "}
-        <strong>Next.js</strong>, turning complex problems into fast, accessible interfaces.
+        Hi, I'm <strong>Sai Raghu Kiran</strong> — a Full-Stack Developer building enterprise
+        CRM &amp; SaaS products with <strong>React</strong>, <strong>Next.js</strong>,{" "}
+        <strong>Node.js</strong> &amp; <strong>PostgreSQL</strong> — turning complex problems
+        into fast, reliable products, end to end.
       </p>
 
       <div className="hero-actions">

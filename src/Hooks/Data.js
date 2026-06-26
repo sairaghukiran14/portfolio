@@ -8,27 +8,27 @@ export const NAV_LINKS = [
 
 export const SKILLS_FEATURED = [
   {
-    icon: "▲",
-    name: "Next.js",
-    desc: "App Router v13–15, SSR/SSG/ISR, Server Components",
-  },
-  {
     icon: "⚛️",
-    name: "React.js",
-    desc: "Advanced hooks, performance, component architecture",
+    name: "React & Next.js",
+    desc: "App Router v13–15, SSR/SSG/ISR, hooks, performance",
   },
   {
     icon: "🔷",
     name: "TypeScript",
     desc: "Strict typing, generics, utility types",
   },
-  { icon: "📦", name: "Redux Toolkit", desc: "Normalized slices, entity adapters, RTK" },
   {
-    icon: "🔄",
-    name: "TanStack Query",
-    desc: "Server state, caching, data-fetching",
+    icon: "🟢",
+    name: "Node.js & Express",
+    desc: "REST & GraphQL APIs, JWT/OAuth, real-time backends",
   },
-  { icon: "🟢", name: "Node.js", desc: "REST APIs, auth, real-time backends" },
+  {
+    icon: "🗄️",
+    name: "PostgreSQL & MongoDB",
+    desc: "Schema design, queries, indexing, ORMs",
+  },
+  { icon: "📦", name: "Redux Toolkit", desc: "Normalized slices, entity adapters, RTK" },
+  { icon: "☁️", name: "AWS & CI/CD", desc: "Cloud deploys, pipelines, Core Web Vitals" },
 ];
 
 export const EXPERIENCE = [

@@ -11,8 +11,8 @@ export function Skills() {
           The tools I <span className="serif grad">master</span> daily.
         </h2>
         <p className="section-sub">
-          Two years of building, optimizing, and shipping production apps with a modern,
-          battle-tested frontend stack.
+          Two years of building, optimizing, and shipping production apps across the full
+          stack — frontend, backend, database, and cloud.
         </p>
       </div>
 
