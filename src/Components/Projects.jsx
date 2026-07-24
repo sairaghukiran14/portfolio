@@ -1,5 +1,6 @@
 import gsap from "gsap";
 import { PROJECTS } from "../Hooks/Data";
+import { FiGithub, FiExternalLink } from "react-icons/fi";
 
 function tiltMove(e) {
   const card = e.currentTarget;
@@ -57,8 +58,40 @@ export function Projects() {
             <div className="project-scrim" />
 
             <div className="project-inner">
-              <div className="project-eyebrow" style={{ color: p.accent }}>
-                Project
+              <div className="project-header">
+                <div className="project-eyebrow" style={{ color: p.accent }}>
+                  Project
+                </div>
+                {(p.repolink || p.livelink) && (
+                  <div className="project-links">
+                    {p.repolink && (
+                      <a
+                        href={p.repolink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="project-link"
+                        title="View GitHub Repository"
+                        aria-label="View GitHub Repository"
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        <FiGithub size={16} />
+                      </a>
+                    )}
+                    {p.livelink && (
+                      <a
+                        href={p.livelink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="project-link"
+                        title="View Live Demo"
+                        aria-label="View Live Demo"
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        <FiExternalLink size={16} />
+                      </a>
+                    )}
+                  </div>
+                )}
               </div>
               <div className="project-name">{p.name}</div>
               <div className="project-tagline">{p.tagline}</div>

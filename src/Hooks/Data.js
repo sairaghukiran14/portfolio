@@ -97,7 +97,37 @@ export const EXPERIENCE = [
 
 export const PROJECTS = [
   {
+    name: "HasaFlow",
+    livelink: "https://hasaflow-amber.vercel.app/",
+    repolink: "https://github.com/sairaghukiran14/hasaflow",
+    tagline: "Visual AI Pipeline Builder & Workflow Orchestration Studio.",
+    desc: "Built a full-stack, drag-and-drop visual workflow orchestration engine using React Flow, enabling users to programmatically design and execute complex DAG pipelines for AI processing. Integrated Sarvam AI APIs to run real-time Speech-to-Text, multilingual translation (10+ Indic languages), and natural Text-to-Speech synthesis.",
+    emoji: "🔀",
+    chips: [
+      "Next.js 16",
+      "React",
+      "TypeScript",
+      "React Flow",
+      "Prisma ORM",
+      "PostgreSQL",
+      "Zustand",
+      "Tailwind CSS",
+      "NextAuth",
+      "Cloudflare R2",
+      "Razorpay SDK"
+    ],
+    grad: "linear-gradient(135deg,#0b233a 0%,#142e4a 50%,#091524 100%)",
+    accent: "#00d2ff",
+    metrics: [
+      ["React Flow", "DAG Engine"],
+      ["Sarvam AI", "10+ Indic Langs"],
+      ["Billing", "Razorpay + R2"],
+    ],
+  },
+  {
     name: "HasaBoard",
+    livelink: "https://hasa-board.vercel.app/",
+    repolink: "https://github.com/sairaghukiran14/HasaBoard",
     tagline: "AI-Powered Client Onboarding SaaS.",
     desc: "Built an all-in-one client onboarding platform consolidating intake, contract signing, and deposit payments into a single branded flow — eliminating 3 separate tools with multi-currency payments and automated e-signature workflows.",
     emoji: "📋",
@@ -112,6 +142,8 @@ export const PROJECTS = [
   },
   {
     name: "OpenResumeCraft",
+    livelink: "https://openresumecraft.vercel.app/",
+    repolink: "https://github.com/sairaghukiran14/OpenResumeCraft",
     tagline: "Privacy-First AI Resume Builder.",
     desc: "Engineered a privacy-first AI resume builder with 100% local model inference via Ollama — all user data stays on-device. Features a deterministic 6-dimension keyword-matching engine and a real-time ATS score dashboard.",
     emoji: "📄",
@@ -126,6 +158,8 @@ export const PROJECTS = [
   },
   {
     name: "TennChat",
+    livelink: "https://github.com/sairaghukiran14/tennochat",
+    repolink: "https://github.com/sairaghukiran14/tennochat",
     tagline: "Real-Time Chat Application.",
     desc: "Built a full-stack real-time messaging platform end-to-end with bidirectional communication, JWT auth, role-based controls, and Redux state management.",
     emoji: "💬",
@@ -138,20 +172,7 @@ export const PROJECTS = [
       ["Testing", "Jest+RTL"],
     ],
   },
-  {
-    name: "AI Article Summarizer",
-    tagline: "Any article. Under 8 seconds.",
-    desc: "Built an AI-powered article summarizer integrating a third-party NLP REST API. Delivered summaries under 8s with cookie-based caching for efficiency.",
-    emoji: "🤖",
-    chips: ["React", "TypeScript", "Node.js", "REST API", "Cookie Storage"],
-    grad: "linear-gradient(135deg,#0a1a2e 0%,#1a1a2e 50%,#0a1428 100%)",
-    accent: "#bf5af2",
-    metrics: [
-      ["Speed", "<8 sec"],
-      ["Efficiency", "+15%"],
-      ["Cache", "Cookies"],
-    ],
-  },
+
 ];
 
 export const ALL_SKILLS = [
