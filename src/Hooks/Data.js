@@ -97,9 +97,9 @@ export const EXPERIENCE = [
 
 export const PROJECTS = [
   {
-    name: "HasaFlow",
-    livelink: "https://hasaflow-amber.vercel.app/",
-    repolink: "https://github.com/sairaghukiran14/hasaflow",
+    name: "Pravah",
+    livelink: "https://pravah-two.vercel.app/",
+    repolink: "https://github.com/sairaghukiran14/pravah",
     tagline: "Visual AI Pipeline Builder & Workflow Orchestration Studio.",
     desc: "Built a full-stack, drag-and-drop visual workflow orchestration engine using React Flow, enabling users to programmatically design and execute complex DAG pipelines for AI processing. Integrated Sarvam AI APIs to run real-time Speech-to-Text, multilingual translation (10+ Indic languages), and natural Text-to-Speech synthesis.",
     emoji: "🔀",
