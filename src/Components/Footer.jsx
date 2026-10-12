@@ -7,9 +7,9 @@ export function Footer() {
           Sai Raghu Kiran
         </div>
         <p className="footer-tagline">
-          Designed &amp; built from scratch in React with GSAP motion — no templates, no page
-          builders. A showcase of scalable <strong>MERN</strong> architecture,{" "}
-          <strong>SaaS</strong> platforms, and production apps shipped to real users.
+          Designed &amp; built from scratch in React with GSAP motion — showcasing production{" "}
+          <strong>LLM &amp; AI</strong> systems, scalable <strong>Full-Stack</strong> architectures,
+          and robust products shipped to real users.
         </p>
         <div className="footer-copy">
           © {new Date().getFullYear()} Avula Sai Raghu Kiran · All rights reserved.
@@ -21,7 +21,7 @@ export function Footer() {
         <a href="https://linkedin.com/in/avulasairaghukiran" target="_blank" rel="noreferrer">
           LinkedIn
         </a>
-        <a href="tel:+918332020170">Phone</a>
+        <a href="tel:+916300109886">Phone</a>
       </div>
     </footer>
   );

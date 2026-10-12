@@ -1,17 +1,20 @@
 export function Ticker() {
   const base = [
-    ["▲", "Next.js"],
-    ["⚛️", "React.js"],
+    ["🤖", "LLMs & RAG"],
+    ["▲", "Next.js 16"],
+    ["⚛️", "React 19"],
+    ["🐍", "Python"],
+    ["⚡", "FastAPI"],
     ["🔷", "TypeScript"],
-    ["📦", "Redux Toolkit"],
-    ["🔄", "TanStack Query"],
-    ["🟢", "Node.js"],
-    ["☁️", "AWS"],
-    ["🎨", "Figma"],
+    ["🔀", "React Flow"],
+    ["🔍", "Langfuse"],
     ["🗄️", "PostgreSQL"],
-    ["🧪", "Jest"],
-    ["📡", "GraphQL"],
-    ["💨", "Tailwind"],
+    ["💎", "Prisma ORM"],
+    ["📦", "Redux & Zustand"],
+    ["🟢", "Node.js"],
+    ["☁️", "AWS & R2"],
+    ["🐳", "Docker"],
+    ["💨", "TailwindCSS"],
   ];
   const items = [...base, ...base];
   return (

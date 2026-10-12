@@ -3,7 +3,7 @@ export function CodeCard({ side }) {
     return (
       <div className="hero-code-card left">
         <div className="code-chip">
-          <span className="kw">const</span> <span className="fn">dev</span>{" "}
+          <span className="kw">const</span> <span className="fn">engineer</span>{" "}
           <span className="op">= {`{`}</span>
           {"\n"}
           {"  "}
@@ -13,10 +13,10 @@ export function CodeCard({ side }) {
           {"  "}
           <span className="str">role</span>
           <span className="op">:</span>{" "}
-          <span className="str">"Full Stack Dev"</span>,{"\n"}
+          <span className="str">"AI & Full Stack"</span>,{"\n"}
           {"  "}
-          <span className="str">stack</span>
-          <span className="op">:</span> <span className="str">"React · Node · PG"</span>,
+          <span className="str">focus</span>
+          <span className="op">:</span> <span className="str">"LLMs · RAG · React"</span>,
           {"\n"}
           <span className="op">{`}`}</span>
         </div>
@@ -25,21 +25,21 @@ export function CodeCard({ side }) {
   return (
     <div className="hero-code-card right">
       <div className="code-chip">
-        <span className="fn">optimize</span>
+        <span className="fn">evalRAG</span>
         <span className="op">(</span>
-        <span className="str">app</span>
+        <span className="str">pipeline</span>
         <span className="op">)</span>
         {"\n"}
         <span className="op">// </span>
-        <span className="str">+25% faster ⚡</span>
+        <span className="str">guardrails active 🛡️</span>
         {"\n"}
-        <span className="fn">ship</span>
+        <span className="fn">orchestrate</span>
         <span className="op">(</span>
-        <span className="str">fullStack</span>
+        <span className="str">dag</span>
         <span className="op">)</span>
         {"\n"}
         <span className="op">// </span>
-        <span className="str">front → back 🚀</span>
+        <span className="str">end-to-end traced ⚡</span>
       </div>
     </div>
   );
